@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ios-assignment' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ios-assignment
+
+  pod 'Alamofire' #Webservice
+  pod 'SwiftyJSON' #API mapping
+  pod 'IHProgressHUD' , :git => 'https://github.com/Swiftify-Corp/IHProgressHUD.git' # Progress View
+  pod 'SideMenu' # Android Like Side Menu
+  pod 'Kingfisher' # Image Caching and Loading
+  pod 'BadgeHub' #Badge
+
+  target 'ios-assignmentTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ios-assignmentUITests' do
+    # Pods for testing
+  end
+
+end

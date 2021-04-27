@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-ios-assignment-ios-assignmentUITests/Pods-ios-assignment-ios-assignmentUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/BadgeHub/BadgeHub.framework
+${BUILT_PRODUCTS_DIR}/IHProgressHUD/IHProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
