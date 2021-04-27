@@ -11,9 +11,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        HomeAPI().getHome { (response) in
+            print(response)
+        } failed: { (error) in
+            
+        }
     }
-
-
 }
 

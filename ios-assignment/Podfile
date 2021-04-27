@@ -7,6 +7,7 @@ target 'ios-assignment' do
 
   # Pods for ios-assignment
 
+  pod 'ReachabilitySwift'  #To ckeck if network available
   pod 'Alamofire' #Webservice
   pod 'SwiftyJSON' #API mapping
   pod 'IHProgressHUD' , :git => 'https://github.com/Swiftify-Corp/IHProgressHUD.git' # Progress View
