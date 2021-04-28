@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="HeaderCollectionReusableView" id="U6b-Vx-4bR" customClass="HeaderCollectionReusableView" customModule="ios_assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="52"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yD1-GR-V8c">
+                    <rect key="frame" x="10" y="0.0" width="347" height="52"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0W-qD-q8Y">
+                    <rect key="frame" x="365" y="16" width="40" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="cGm-po-8OS"/>
+                        <constraint firstAttribute="height" constant="20" id="hZa-D7-w6v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="ALL">
+                        <color key="titleColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yD1-GR-V8c" secondAttribute="bottom" id="L9t-7C-orG"/>
+                <constraint firstItem="yD1-GR-V8c" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="hfQ-F8-dr7"/>
+                <constraint firstItem="u0W-qD-q8Y" firstAttribute="leading" secondItem="yD1-GR-V8c" secondAttribute="trailing" constant="8" id="iqZ-cU-FIo"/>
+                <constraint firstAttribute="trailing" secondItem="u0W-qD-q8Y" secondAttribute="trailing" constant="20" id="jfh-HV-EM0"/>
+                <constraint firstItem="u0W-qD-q8Y" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="mcg-ac-5yB"/>
+                <constraint firstItem="yD1-GR-V8c" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="su4-vW-I1A"/>
+            </constraints>
+            <connections>
+                <outlet property="allButton" destination="u0W-qD-q8Y" id="EUJ-RD-hxC"/>
+                <outlet property="title" destination="yD1-GR-V8c" id="ewg-Jm-iRn"/>
+            </connections>
+            <point key="canvasLocation" x="213.768115942029" y="63.616071428571423"/>
+        </collectionReusableView>
+    </objects>
+</document>

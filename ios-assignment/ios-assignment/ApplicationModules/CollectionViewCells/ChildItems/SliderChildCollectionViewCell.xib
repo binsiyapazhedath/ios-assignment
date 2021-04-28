@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SliderChildCollectionViewCell" id="gTV-IL-0wX" customClass="SliderChildCollectionViewCell" customModule="ios_assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="308" height="173"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="308" height="173"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aqt-4w-jtM">
+                        <rect key="frame" x="10" y="0.0" width="288" height="173"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMc-Df-6DS">
+                        <rect key="frame" x="50" y="77.5" width="242" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3M-c8-nvo">
+                        <rect key="frame" x="50" y="40.5" width="242" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="UMc-Df-6DS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="50" id="6Mt-TQ-Nar"/>
+                <constraint firstAttribute="trailing" secondItem="UMc-Df-6DS" secondAttribute="trailing" constant="16" id="DMi-jF-uL4"/>
+                <constraint firstItem="UMc-Df-6DS" firstAttribute="top" secondItem="X3M-c8-nvo" secondAttribute="bottom" constant="16" id="S09-8X-vfB"/>
+                <constraint firstAttribute="trailing" secondItem="Aqt-4w-jtM" secondAttribute="trailing" constant="10" id="S0h-uR-AtT"/>
+                <constraint firstItem="UMc-Df-6DS" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="XgK-2N-jcR"/>
+                <constraint firstAttribute="trailing" secondItem="X3M-c8-nvo" secondAttribute="trailing" constant="16" id="cCW-VV-nJa"/>
+                <constraint firstItem="Aqt-4w-jtM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="njt-uh-dKF"/>
+                <constraint firstItem="X3M-c8-nvo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="50" id="qLx-gO-Abq"/>
+                <constraint firstAttribute="bottom" secondItem="Aqt-4w-jtM" secondAttribute="bottom" id="tfk-3A-1bB"/>
+                <constraint firstItem="Aqt-4w-jtM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="vGH-dT-4cR"/>
+            </constraints>
+            <size key="customSize" width="308" height="173"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                    <real key="value" value="2"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                    <real key="value" value="0.20000000000000001"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="sliderImage" destination="Aqt-4w-jtM" id="NtG-G9-CYE"/>
+                <outlet property="subTitle" destination="UMc-Df-6DS" id="uwu-Sq-R7N"/>
+                <outlet property="title" destination="X3M-c8-nvo" id="agu-b9-vMI"/>
+            </connections>
+            <point key="canvasLocation" x="324.63768115942031" y="104.79910714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

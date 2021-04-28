@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CourseChildCollectionViewCell" id="gTV-IL-0wX" customClass="CourseChildCollectionViewCell" customModule="ios_assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="266" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="266" height="145"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fhw-2o-Auz">
+                        <rect key="frame" x="8" y="4" width="250" height="108.5"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdY-pf-aHL">
+                        <rect key="frame" x="10" y="120.5" width="246" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AtS-Le-OoZ">
+                        <rect key="frame" x="16" y="90" width="33" height="14.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Fhw-2o-Auz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="0iE-Jr-Srn"/>
+                <constraint firstAttribute="trailing" secondItem="zdY-pf-aHL" secondAttribute="trailing" constant="10" id="2dH-NJ-lbO"/>
+                <constraint firstItem="AtS-Le-OoZ" firstAttribute="leading" secondItem="Fhw-2o-Auz" secondAttribute="leading" constant="8" id="Rlf-Fl-sj1"/>
+                <constraint firstAttribute="bottom" secondItem="zdY-pf-aHL" secondAttribute="bottom" constant="10" id="YWQ-l2-nz7"/>
+                <constraint firstItem="zdY-pf-aHL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="amP-hP-nF3"/>
+                <constraint firstItem="zdY-pf-aHL" firstAttribute="top" secondItem="Fhw-2o-Auz" secondAttribute="bottom" constant="8" id="esI-fQ-2ig"/>
+                <constraint firstAttribute="trailing" secondItem="Fhw-2o-Auz" secondAttribute="trailing" constant="8" id="iRH-yQ-ySL"/>
+                <constraint firstItem="Fhw-2o-Auz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="nAm-Co-xXS"/>
+                <constraint firstItem="Fhw-2o-Auz" firstAttribute="bottom" secondItem="AtS-Le-OoZ" secondAttribute="bottom" constant="8" id="w4X-Gx-qs3"/>
+            </constraints>
+            <size key="customSize" width="266" height="145"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                    <real key="value" value="2"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                    <real key="value" value="0.20000000000000001"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imageView" destination="Fhw-2o-Auz" id="2EI-bW-ei5"/>
+                <outlet property="price" destination="AtS-Le-OoZ" id="Pkq-Aa-kDt"/>
+                <outlet property="title" destination="zdY-pf-aHL" id="OfA-xw-MpT"/>
+            </connections>
+            <point key="canvasLocation" x="146.37681159420291" y="124.88839285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>

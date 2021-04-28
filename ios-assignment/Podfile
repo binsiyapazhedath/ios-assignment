@@ -14,6 +14,7 @@ target 'ios-assignment' do
   pod 'SideMenu' # Android Like Side Menu
   pod 'Kingfisher' # Image Caching and Loading
   pod 'BadgeHub' #Badge
+  pod 'CHIPageControl/Jalapeno' #Custom page controll
 
   target 'ios-assignmentTests' do
     inherit! :search_paths

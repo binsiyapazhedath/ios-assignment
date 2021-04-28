@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (5.4.1)
   - BadgeHub (1.0.0)
+  - CHIPageControl/Jalapeno (0.2)
   - IHProgressHUD (0.1.5)
   - Kingfisher (6.0.1)
   - ReachabilitySwift (5.0.0)
@@ -10,6 +11,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - BadgeHub
+  - CHIPageControl/Jalapeno
   - IHProgressHUD (from `https://github.com/Swiftify-Corp/IHProgressHUD.git`)
   - Kingfisher
   - ReachabilitySwift
@@ -20,6 +22,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - BadgeHub
+    - CHIPageControl
     - Kingfisher
     - ReachabilitySwift
     - SideMenu
@@ -37,12 +40,13 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   BadgeHub: b227771329f78c37a2dae7502607ec6d00a50bd4
+  CHIPageControl: a787bf7205c9b7e7fbfc412be36c5e8636b68f86
   IHProgressHUD: 554f1e4cb088cf82c238dc1c607f5fadfd81ab89
   Kingfisher: adde87a4f74f6a3845395769354efff593581740
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 92aeef62ae7fdafafaf08f3f83f07a3cba3114e9
+PODFILE CHECKSUM: 47fd6ae7d8a05226c1a2e590d84f4b5b7840d762
 
 COCOAPODS: 1.10.0
