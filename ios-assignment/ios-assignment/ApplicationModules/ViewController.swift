@@ -12,6 +12,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     
     @IBOutlet weak var homeCollectionView: UICollectionView!
     @IBOutlet weak var notificationButton: UIBarButtonItem!
+    @IBOutlet weak var navBarExtensionView: UIView!
     
     var homeItems: [HomeItems] = [HomeItems]()
     
@@ -25,6 +26,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         notificationBadgeHub?.setCircleColor(UIColor.init(hex: "#91B14E"), label: .white)
         notificationBadgeHub?.setCircleBorderColor(.white, borderWidth: 1)
         notificationBadgeHub?.moveCircleBy(x: -4, y: 8)
+        setupNavBar()
         registerCells()
         registerHeader()
         
@@ -50,6 +52,13 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     
     func registerHeader(){
         homeCollectionView.register(UINib(nibName: "HeaderCollectionReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderCollectionReusableView")
+    }
+    
+    func setupNavBar()
+    {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.layoutIfNeeded()
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -119,6 +128,15 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
                 header.backgroundColor = UIColor.init(hex: "#FBF6F3")
             }
             return header
+        }
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offset = scrollView.contentOffset.y
+        print(offset)
+        if(offset > 0)
+        {
+            self.navBarExtensionView.Y = -(offset)
         }
     }
 

@@ -17,9 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R8E-n9-wOi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="aXr-YE-kXT"/>
+                                </constraints>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3nM-Z0-oZt">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bx0-e8-OJY">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -32,10 +39,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="R8E-n9-wOi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="B8c-MI-sHn"/>
                             <constraint firstItem="3nM-Z0-oZt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="INY-pr-MXa"/>
                             <constraint firstItem="3nM-Z0-oZt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MJe-zc-qSI"/>
                             <constraint firstItem="3nM-Z0-oZt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="UXi-ho-Ht3"/>
+                            <constraint firstItem="R8E-n9-wOi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="c2I-lf-0qj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3nM-Z0-oZt" secondAttribute="trailing" id="v3s-nS-APt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R8E-n9-wOi" secondAttribute="trailing" id="zlH-CY-W2i"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mu1-Ji-VaS">
@@ -46,13 +56,19 @@
                                 <segue destination="lx8-dc-t5b" kind="presentation" id="gct-Ep-Sau"/>
                             </connections>
                         </barButtonItem>
-                        <view key="titleView" contentMode="scaleToFill" id="70V-2z-m5W">
+                        <view key="titleView" contentMode="scaleToFill" ambiguous="YES" id="70V-2z-m5W">
                             <rect key="frame" x="207" y="22" width="0.0" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="68R-8e-Zjb"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="68R-8e-Zjb">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="S8D-I4-BkA"/>
+                                        <constraint firstAttribute="width" constant="30" id="doF-fO-HoP"/>
+                                    </constraints>
+                                </imageView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="68R-8e-Zjb" secondAttribute="trailing" id="A3a-fF-oMK"/>
                                 <constraint firstAttribute="bottom" secondItem="68R-8e-Zjb" secondAttribute="bottom" id="Nn7-HJ-QFH"/>
@@ -71,6 +87,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="homeCollectionView" destination="3nM-Z0-oZt" id="ozc-Tn-B23"/>
+                        <outlet property="navBarExtensionView" destination="R8E-n9-wOi" id="k70-Me-TGG"/>
                         <outlet property="notificationButton" destination="RqX-h4-sg0" id="Qqw-fJ-cLm"/>
                     </connections>
                 </viewController>
@@ -86,7 +103,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="qZC-CU-9at"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="3z3-cv-6vN"/>
                 </viewController>
@@ -141,6 +158,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="app_logo" width="50" height="50"/>
         <image name="bell" catalog="system" width="128" height="124"/>
         <image name="text.alignleft" catalog="system" width="128" height="100"/>
         <namedColor name="AccentColor">
@@ -149,8 +167,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
